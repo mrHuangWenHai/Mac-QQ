@@ -19,6 +19,9 @@
 		01451C8020C5206A0057C787 /* LoginAccountTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 01451C7F20C5206A0057C787 /* LoginAccountTextField.m */; };
 		01451C8320C520860057C787 /* LoginPasswordTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 01451C8220C520860057C787 /* LoginPasswordTextField.m */; };
 		01451CCA20C641470057C787 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01451CC920C641470057C787 /* SettingViewController.m */; };
+		01451D2320D3F7BC0057C787 /* LoginUseritem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01451D2120D3F7BC0057C787 /* LoginUseritem.m */; };
+		01451D2420D3F7BC0057C787 /* LoginUseritem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01451D2220D3F7BC0057C787 /* LoginUseritem.xib */; };
+		01451D2720D4E7CE0057C787 /* StatusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 01451D2620D4E7CD0057C787 /* StatusButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,11 @@
 		01451C8220C520860057C787 /* LoginPasswordTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginPasswordTextField.m; sourceTree = "<group>"; };
 		01451CC820C641470057C787 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		01451CC920C641470057C787 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		01451D2020D3F7BC0057C787 /* LoginUseritem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginUseritem.h; sourceTree = "<group>"; };
+		01451D2120D3F7BC0057C787 /* LoginUseritem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginUseritem.m; sourceTree = "<group>"; };
+		01451D2220D3F7BC0057C787 /* LoginUseritem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginUseritem.xib; sourceTree = "<group>"; };
+		01451D2520D4E7CD0057C787 /* StatusButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusButton.h; sourceTree = "<group>"; };
+		01451D2620D4E7CD0057C787 /* StatusButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,11 @@
 				01451C8220C520860057C787 /* LoginPasswordTextField.m */,
 				01451CC820C641470057C787 /* SettingViewController.h */,
 				01451CC920C641470057C787 /* SettingViewController.m */,
+				01451D2020D3F7BC0057C787 /* LoginUseritem.h */,
+				01451D2120D3F7BC0057C787 /* LoginUseritem.m */,
+				01451D2220D3F7BC0057C787 /* LoginUseritem.xib */,
+				01451D2520D4E7CD0057C787 /* StatusButton.h */,
+				01451D2620D4E7CD0057C787 /* StatusButton.m */,
 			);
 			path = QQ;
 			sourceTree = "<group>";
@@ -263,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01451C4F20C4E45D0057C787 /* Assets.xcassets in Resources */,
+				01451D2420D3F7BC0057C787 /* LoginUseritem.xib in Resources */,
 				01451C5220C4E45D0057C787 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,9 +305,11 @@
 				01451C7D20C512400057C787 /* LoginImageButton.m in Sources */,
 				01451C4D20C4E45D0057C787 /* ViewController.m in Sources */,
 				01451C5520C4E45D0057C787 /* main.m in Sources */,
+				01451D2320D3F7BC0057C787 /* LoginUseritem.m in Sources */,
 				01451C8320C520860057C787 /* LoginPasswordTextField.m in Sources */,
 				01451C4A20C4E45D0057C787 /* AppDelegate.m in Sources */,
 				01451C7A20C4E5EC0057C787 /* LoginWindowController.m in Sources */,
+				01451D2720D4E7CE0057C787 /* StatusButton.m in Sources */,
 				01451C8020C5206A0057C787 /* LoginAccountTextField.m in Sources */,
 				01451CCA20C641470057C787 /* SettingViewController.m in Sources */,
 			);

@@ -9,9 +9,15 @@
 #import "ViewController.h"
 #import "SettingViewController.h"
 #import <Quartz/Quartz.h>
+#import "LoginUseritem.h"
+#import "LoginImageButton.h"
 
-@interface ViewController()
+@interface ViewController()<NSCollectionViewDataSource, NSCollectionViewDelegate>
 @property(nonatomic, strong)NSWindow* settingWindow;
+@property(nonatomic, strong)NSArray* headImageArray;
+@property(nonatomic, strong)LoginImageButton* loginImageButton;
+@property(nonatomic, assign)CGRect lastRect;
+@property (strong) IBOutlet NSCollectionView *headCollectionView;
 @end
 
 @implementation ViewController
@@ -19,7 +25,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldChange:) name:NSTextDidChangeNotification object:nil];
-    // Do any additional setup after loading the view.
+    self.headCollectionView.dataSource = self;
+    self.headCollectionView.delegate = self;
+    self.headImageArray = @[@"2_01", @"2_02", @"2_03", @"2_04", @"2_05"];
+    self.headCollectionView.hidden = true;
+
+    self.loginImageButton.image = [NSImage imageNamed:self.headImageArray[0]];
+    self.loginImageButton.frame = NSMakeRect(self.view.frame.size.width / 2 - 50, self.view.frame.size.height / 2 + 10, 100, 100);
+    [self.view addSubview:self.loginImageButton];
+    
+    self.lastRect = [self.view convertRect:NSMakeRect(0, 0, 40, 40) fromView:self.headCollectionView];
+//    [self.headCollectionView registerNib:[[NSNib alloc] initWithNibNamed:@"LoginUseritem" bundle:nil] forItemWithIdentifier:@"LoginUseritem"];
 }
 
 - (void)viewWillAppear {
@@ -70,8 +86,61 @@
 - (IBAction)closeLoginWindow:(id)sender {
     [NSApp terminate:sender];
 }
+
 - (IBAction)enter:(id)sender {
     NSLog(@"qqq");
+}
+
+//MARK NSCollectionViewDataSource
+- (NSCollectionViewItem *)collectionView:(NSCollectionView *)collectionView itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath {
+    LoginUseritem* userItem = [collectionView makeItemWithIdentifier:@"LoginUseritem" forIndexPath:indexPath];
+    userItem.headUrl = self.headImageArray[indexPath.item];
+    __weak typeof(self) weakSelf = self;
+    userItem.handleClick = ^(LoginUseritem* userItem) {
+        [weakSelf showLoginAccountWithClickItem:userItem];
+    };
+    
+    return userItem;
+}
+
+- (NSInteger)collectionView:(NSCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.headImageArray.count;
+}
+
+- (void)showLoginAccountWithClickItem:(LoginUseritem*)userItem {
+    
+    CGRect lastRect = [self.view convertRect:userItem.view.frame fromView:self.headCollectionView];
+    self.lastRect = lastRect;
+    self.loginImageButton.frame = lastRect;
+    self.loginImageButton.image = [NSImage imageNamed:userItem.headUrl];
+    [self.view addSubview:self.loginImageButton];
+    self.headCollectionView.hidden = true;
+    [NSAnimationContext runAnimationGroup:^(NSAnimationContext * _Nonnull context) {
+        context.duration = 0.5;
+        context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+        [self.loginImageButton.animator setFrame:NSMakeRect(self.view.frame.size.width / 2 - 50, self.view.frame.size.height / 2 + 10, 100, 100)];
+    } completionHandler:^{
+        
+    }];
+}
+
+- (LoginImageButton*)loginImageButton {
+    if (!_loginImageButton) {
+        _loginImageButton = [[LoginImageButton alloc] init];
+        _loginImageButton.action = @selector(showCollectionView);
+    }
+    return _loginImageButton;
+}
+
+- (void)showCollectionView {
+    [NSAnimationContext runAnimationGroup:^(NSAnimationContext * _Nonnull context) {
+        context.duration = 0.5;
+        context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+        [self.loginImageButton.animator setFrame:self.lastRect];
+    } completionHandler:^{
+        [self.loginImageButton removeFromSuperview];
+        self.headCollectionView.hidden = false;
+    }];
 }
 
 @end

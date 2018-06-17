@@ -21,7 +21,9 @@
     [super drawRect:dirtyRect];
     _width = 1;
     _mouseEnteredWidth = 2;
+    self.imageScaling = NSImageScaleAxesIndependently;
     self.layer.cornerRadius = CGRectGetWidth(dirtyRect)/2;
+    self.layer.masksToBounds = true;
     NSTrackingArea* area = [[NSTrackingArea alloc] initWithRect:self.bounds options:NSTrackingMouseEnteredAndExited | NSTrackingActiveInActiveApp owner:self userInfo:nil];
     [self addTrackingArea:area];
     [self changeColor:self.defaultColor withWidth:1];

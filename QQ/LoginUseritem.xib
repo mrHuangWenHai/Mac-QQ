@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LoginUseritem">
+            <connections>
+                <outlet property="imageButton" destination="CUZ-sX-xf8" id="tL8-QP-zgv"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="CUZ-sX-xf8" customClass="LoginImageButton">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="DeI-4d-bb4"/>
+                        <constraint firstAttribute="height" constant="40" id="pJa-eP-6Sr"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="1_04" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hmi-vO-U9b">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="handleClick:" target="-2" id="0le-jo-kz9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="CUZ-sX-xf8" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="6PM-f3-mBW"/>
+                <constraint firstAttribute="bottom" secondItem="CUZ-sX-xf8" secondAttribute="bottom" id="Dmw-CG-Wbx"/>
+                <constraint firstItem="CUZ-sX-xf8" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="F3M-iG-y0Y"/>
+                <constraint firstAttribute="trailing" secondItem="CUZ-sX-xf8" secondAttribute="trailing" id="STm-Q8-Psr"/>
+                <constraint firstItem="CUZ-sX-xf8" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="amQ-7N-MN1"/>
+                <constraint firstAttribute="bottom" secondItem="CUZ-sX-xf8" secondAttribute="bottom" id="jio-Os-Dkx"/>
+                <constraint firstAttribute="trailing" secondItem="CUZ-sX-xf8" secondAttribute="trailing" id="vdZ-Uq-9N7"/>
+                <constraint firstItem="CUZ-sX-xf8" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="x9J-JN-wbQ"/>
+            </constraints>
+            <point key="canvasLocation" x="-436" y="-174"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="1_04" width="13" height="7.5"/>
+    </resources>
+</document>
