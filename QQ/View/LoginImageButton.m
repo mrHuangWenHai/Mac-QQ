@@ -17,13 +17,20 @@
 
 @implementation LoginImageButton
 
+- (instancetype)initWithFrame:(NSRect)frameRect {
+    self = [super initWithFrame:frameRect];
+    if (self) {
+        self.bordered = false;
+        self.imageScaling = NSImageScaleAxesIndependently;
+    }
+    return self;
+}
+
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     _width = 1;
-    _mouseEnteredWidth = 2;
-    self.imageScaling = NSImageScaleAxesIndependently;
     self.layer.cornerRadius = CGRectGetWidth(dirtyRect)/2;
-    self.layer.masksToBounds = true;
+  //  self.layer.masksToBounds = true;
     NSTrackingArea* area = [[NSTrackingArea alloc] initWithRect:self.bounds options:NSTrackingMouseEnteredAndExited | NSTrackingActiveInActiveApp owner:self userInfo:nil];
     [self addTrackingArea:area];
     [self changeColor:self.defaultColor withWidth:1];

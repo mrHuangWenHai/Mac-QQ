@@ -1,14 +1,14 @@
 //
-//  StatusButton.m
+//  ChatTextView.m
 //  QQ
 //
-//  Created by 黄文海 on 2018/6/16.
+//  Created by 黄文海 on 2018/6/30.
 //  Copyright © 2018年 huang. All rights reserved.
 //
 
-#import "StatusButton.h"
+#import "ChatTextView.h"
 
-@implementation StatusButton
+@implementation ChatTextView
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
