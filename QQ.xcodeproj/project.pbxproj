@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011F705A20E673F0000291E6 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F705920E673F0000291E6 /* MainWindowController.m */; };
+		011F705D20E67B07000291E6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F705C20E67B07000291E6 /* MainViewController.m */; };
+		011F706320E6878F000291E6 /* SearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F706220E6878F000291E6 /* SearchTextField.m */; };
+		011F706620E7717F000291E6 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F706520E7717F000291E6 /* MessageViewController.m */; };
+		011F706A20E77192000291E6 /* FriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F706820E77192000291E6 /* FriendViewController.m */; };
+		011F706F20E771AE000291E6 /* ApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F706D20E771AE000291E6 /* ApplicationViewController.m */; };
+		011F707320E77E33000291E6 /* MessageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 011F707220E77E33000291E6 /* MessageCellView.m */; };
 		01451C4A20C4E45D0057C787 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01451C4920C4E45D0057C787 /* AppDelegate.m */; };
 		01451C4D20C4E45D0057C787 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01451C4C20C4E45D0057C787 /* ViewController.m */; };
 		01451C4F20C4E45D0057C787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01451C4E20C4E45D0057C787 /* Assets.xcassets */; };
@@ -22,6 +29,7 @@
 		01451D2320D3F7BC0057C787 /* LoginUseritem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01451D2120D3F7BC0057C787 /* LoginUseritem.m */; };
 		01451D2420D3F7BC0057C787 /* LoginUseritem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01451D2220D3F7BC0057C787 /* LoginUseritem.xib */; };
 		01451D2720D4E7CE0057C787 /* StatusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 01451D2620D4E7CD0057C787 /* StatusButton.m */; };
+		01FBA25B20E7D239004CC0C7 /* ChatTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FBA25A20E7D239004CC0C7 /* ChatTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +50,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		011F705820E673F0000291E6 /* MainWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		011F705920E673F0000291E6 /* MainWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		011F705B20E67B07000291E6 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		011F705C20E67B07000291E6 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		011F706120E6878F000291E6 /* SearchTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTextField.h; sourceTree = "<group>"; };
+		011F706220E6878F000291E6 /* SearchTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTextField.m; sourceTree = "<group>"; };
+		011F706420E7717E000291E6 /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		011F706520E7717F000291E6 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		011F706720E77192000291E6 /* FriendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendViewController.h; sourceTree = "<group>"; };
+		011F706820E77192000291E6 /* FriendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendViewController.m; sourceTree = "<group>"; };
+		011F706C20E771AE000291E6 /* ApplicationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationViewController.h; sourceTree = "<group>"; };
+		011F706D20E771AE000291E6 /* ApplicationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationViewController.m; sourceTree = "<group>"; };
+		011F707120E77E33000291E6 /* MessageCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageCellView.h; sourceTree = "<group>"; };
+		011F707220E77E33000291E6 /* MessageCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageCellView.m; sourceTree = "<group>"; };
 		01451C4520C4E45D0057C787 /* QQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01451C4820C4E45D0057C787 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		01451C4920C4E45D0057C787 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +95,8 @@
 		01451D2220D3F7BC0057C787 /* LoginUseritem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginUseritem.xib; sourceTree = "<group>"; };
 		01451D2520D4E7CD0057C787 /* StatusButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusButton.h; sourceTree = "<group>"; };
 		01451D2620D4E7CD0057C787 /* StatusButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusButton.m; sourceTree = "<group>"; };
+		01FBA25920E7D239004CC0C7 /* ChatTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatTextView.h; sourceTree = "<group>"; };
+		01FBA25A20E7D239004CC0C7 /* ChatTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +124,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011F705620E66B1C000291E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01451C4B20C4E45D0057C787 /* ViewController.h */,
+				01451C4C20C4E45D0057C787 /* ViewController.m */,
+				01451C7820C4E5EC0057C787 /* LoginWindowController.h */,
+				01451C7920C4E5EC0057C787 /* LoginWindowController.m */,
+				01451CC820C641470057C787 /* SettingViewController.h */,
+				01451CC920C641470057C787 /* SettingViewController.m */,
+				011F705820E673F0000291E6 /* MainWindowController.h */,
+				011F705920E673F0000291E6 /* MainWindowController.m */,
+				011F705B20E67B07000291E6 /* MainViewController.h */,
+				011F705C20E67B07000291E6 /* MainViewController.m */,
+				011F706420E7717E000291E6 /* MessageViewController.h */,
+				011F706520E7717F000291E6 /* MessageViewController.m */,
+				011F706720E77192000291E6 /* FriendViewController.h */,
+				011F706820E77192000291E6 /* FriendViewController.m */,
+				011F706C20E771AE000291E6 /* ApplicationViewController.h */,
+				011F706D20E771AE000291E6 /* ApplicationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		011F705720E66B39000291E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01451C7B20C512400057C787 /* LoginImageButton.h */,
+				01451C7C20C512400057C787 /* LoginImageButton.m */,
+				01451C7E20C5206A0057C787 /* LoginAccountTextField.h */,
+				01451C7F20C5206A0057C787 /* LoginAccountTextField.m */,
+				01451C8120C520860057C787 /* LoginPasswordTextField.h */,
+				01451C8220C520860057C787 /* LoginPasswordTextField.m */,
+				01451D2020D3F7BC0057C787 /* LoginUseritem.h */,
+				01451D2120D3F7BC0057C787 /* LoginUseritem.m */,
+				01451D2220D3F7BC0057C787 /* LoginUseritem.xib */,
+				01451D2520D4E7CD0057C787 /* StatusButton.h */,
+				01451D2620D4E7CD0057C787 /* StatusButton.m */,
+				011F706120E6878F000291E6 /* SearchTextField.h */,
+				011F706220E6878F000291E6 /* SearchTextField.m */,
+				011F707120E77E33000291E6 /* MessageCellView.h */,
+				011F707220E77E33000291E6 /* MessageCellView.m */,
+				01FBA25920E7D239004CC0C7 /* ChatTextView.h */,
+				01FBA25A20E7D239004CC0C7 /* ChatTextView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		01451C3C20C4E45D0057C787 = {
 			isa = PBXGroup;
 			children = (
@@ -125,28 +196,13 @@
 			children = (
 				01451C4820C4E45D0057C787 /* AppDelegate.h */,
 				01451C4920C4E45D0057C787 /* AppDelegate.m */,
-				01451C4B20C4E45D0057C787 /* ViewController.h */,
-				01451C4C20C4E45D0057C787 /* ViewController.m */,
+				011F705720E66B39000291E6 /* View */,
+				011F705620E66B1C000291E6 /* Controller */,
 				01451C4E20C4E45D0057C787 /* Assets.xcassets */,
 				01451C5020C4E45D0057C787 /* Main.storyboard */,
 				01451C5320C4E45D0057C787 /* Info.plist */,
 				01451C5420C4E45D0057C787 /* main.m */,
 				01451C5620C4E45D0057C787 /* QQ.entitlements */,
-				01451C7820C4E5EC0057C787 /* LoginWindowController.h */,
-				01451C7920C4E5EC0057C787 /* LoginWindowController.m */,
-				01451C7B20C512400057C787 /* LoginImageButton.h */,
-				01451C7C20C512400057C787 /* LoginImageButton.m */,
-				01451C7E20C5206A0057C787 /* LoginAccountTextField.h */,
-				01451C7F20C5206A0057C787 /* LoginAccountTextField.m */,
-				01451C8120C520860057C787 /* LoginPasswordTextField.h */,
-				01451C8220C520860057C787 /* LoginPasswordTextField.m */,
-				01451CC820C641470057C787 /* SettingViewController.h */,
-				01451CC920C641470057C787 /* SettingViewController.m */,
-				01451D2020D3F7BC0057C787 /* LoginUseritem.h */,
-				01451D2120D3F7BC0057C787 /* LoginUseritem.m */,
-				01451D2220D3F7BC0057C787 /* LoginUseritem.xib */,
-				01451D2520D4E7CD0057C787 /* StatusButton.h */,
-				01451D2620D4E7CD0057C787 /* StatusButton.m */,
 			);
 			path = QQ;
 			sourceTree = "<group>";
@@ -302,15 +358,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011F705A20E673F0000291E6 /* MainWindowController.m in Sources */,
 				01451C7D20C512400057C787 /* LoginImageButton.m in Sources */,
 				01451C4D20C4E45D0057C787 /* ViewController.m in Sources */,
 				01451C5520C4E45D0057C787 /* main.m in Sources */,
 				01451D2320D3F7BC0057C787 /* LoginUseritem.m in Sources */,
 				01451C8320C520860057C787 /* LoginPasswordTextField.m in Sources */,
+				011F706620E7717F000291E6 /* MessageViewController.m in Sources */,
+				01FBA25B20E7D239004CC0C7 /* ChatTextView.m in Sources */,
 				01451C4A20C4E45D0057C787 /* AppDelegate.m in Sources */,
+				011F705D20E67B07000291E6 /* MainViewController.m in Sources */,
+				011F706F20E771AE000291E6 /* ApplicationViewController.m in Sources */,
 				01451C7A20C4E5EC0057C787 /* LoginWindowController.m in Sources */,
 				01451D2720D4E7CE0057C787 /* StatusButton.m in Sources */,
+				011F706320E6878F000291E6 /* SearchTextField.m in Sources */,
+				011F707320E77E33000291E6 /* MessageCellView.m in Sources */,
 				01451C8020C5206A0057C787 /* LoginAccountTextField.m in Sources */,
+				011F706A20E77192000291E6 /* FriendViewController.m in Sources */,
 				01451CCA20C641470057C787 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
